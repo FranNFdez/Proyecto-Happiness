@@ -44,6 +44,8 @@ public class Main {
                     break;
                 default:
                     System.out.println("Opcion no valida");
+                    System.out.println("Repita su selección");
+
             }
 
         } while (opcion != 9);
