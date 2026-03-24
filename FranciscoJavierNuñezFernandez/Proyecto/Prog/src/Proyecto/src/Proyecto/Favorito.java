@@ -1,4 +1,4 @@
-package Prog;
+package Proyecto;
 
 public class Favorito {
 
