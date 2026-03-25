@@ -33,10 +33,10 @@ public class Main {
                 	menuUsuarios(sc);
                     break;
                 case 2:
-                	menuEventos(sc);
+                //	menuEventos(sc);
                     break;
                 case 3:
-                	menuFavoritos(sc);
+                //	menuFavoritos(sc);
                     break;
                 case 4:
                     System.out.println("Saliendo...");
@@ -70,7 +70,7 @@ public class Main {
                     crearUsuario(sc);
                     break;
                 case 2:
-                    //eliminarUsuario(sc);
+                    eliminarUsuario(sc);
                     break;
             }
 
@@ -128,7 +128,7 @@ public class Main {
     }
     
     
-    /*Creacion Usuarios*/
+    /*Creacion usuarios y borrado de usuarios*/
     public static void crearUsuario(Scanner sc){
         System.out.println("Introduzca su nombre:");
         String nombre = sc.nextLine();
@@ -144,18 +144,62 @@ public class Main {
         password = sc.nextLine();
         System.out.println("Repita su contraseña");
         confirmarpassword = sc.nextLine();
-        if (password.equals(confirmarpassword)) {
+        if (!password.equals(confirmarpassword)) {
             System.out.println("Las contraseñas no coinciden, inténtelo de nuevo");
         }
-        }while (!password.equals(confirmarpassword));
+        }
+        while (!password.equals(confirmarpassword));
         
         /*Comprobar si el usuario existe*/
         if (usuarios.containsKey(email)) {
             System.out.println("El usuario ya existe");
-        }else{
+        }
+        else{
             Usuario nuevo = new Usuario (nombre, email, password);
             usuarios.put(email, nuevo);
             System.out.println("Usuario creado correctamente");
         }
+    }
+    public static void eliminarUsuario(Scanner sc){
+    	System.out.println("Introduzca el email del usuario que desea eliminar");
+    	String email = sc.nextLine();
+    
+	    /*Comprobar si el usuario existe*/
+	    if (!usuarios.containsKey(email)) {
+	        System.out.println("El usuario no existe");
+	    }
+	    else {
+	    	usuarios.remove(email);
+	    	System.out.println("Usuario eliminado correctamente");
+	    }
+	}
+    
+    /*Creación Eventos*/
+    public static void crearEvento(Scanner sc) {
+    	System.out.printf("Introduzca la fecha del evento:\nEl formato de fecha debe de ser: dd/mm/yyyy");
+    	String fecha = sc.nextLine();
+    	
+    	System.out.println("Introduzca el titulo del evento:");
+    	String titulo = sc.nextLine();
+    	
+    	System.out.println("Introduzca la ubicación del evento:");
+    	String ubicacion = sc.nextLine();
+    	
+    	System.out.println("Introduzca el circuito/lugar donde se realizara el evento:");
+    	String circuito = sc.nextLine();
+    	
+    	System.out.println("Introduzca una breve descripción del evento:");
+    	String descripcion = sc.nextLine();
+    	
+    	contadorEventos++;
+    	int id = contadorEventos;
+    	Evento nuevo = new Evento(id, fecha, titulo, ubicacion, descripcion);
+    	eventos.put(id, nuevo);
+    	
+        System.out.println("Evento creado correctamente");
+	
+    	
+    	
+    	
     }
 }
