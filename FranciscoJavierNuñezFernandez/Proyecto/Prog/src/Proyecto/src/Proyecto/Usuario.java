@@ -16,14 +16,14 @@ public class Usuario {
 	public String getEmail() {
 		return email;
 	}
-	public String getPassword() {
-		return password
+	public String getEmail() {
+		return email;
 	}
-	public String setNombre(String nombre) {
+	public String setNombre(String Nombre) {
 		this.nombre = nombre;
 	}
-	public String getPassword(String password) {
-		this.nombre = password;
+	public String getPassword(String Password) {
+		this.password = password;
 	}
 	public String setPassword(String Password) {
 		this.nombre = Password;
