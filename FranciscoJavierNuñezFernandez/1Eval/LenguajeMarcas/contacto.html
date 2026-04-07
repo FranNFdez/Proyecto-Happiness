@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<tittle>Contacto</title>
+	</head>
+	<body>
+		<h1>Contactos</h1>
+		<form action="contacto.php" method="post"enctype="text/plain">
+		<fieldset>
+			<legend>Datos Personales</legend>
+			<label for "nombre">Nombre:</label>
+			<input type="text" name="nombre" id="nombre">
+			<br><br>
+			<input type="text" name="apellidos" id="apellidos">
+			<br><br>
+		</fieldset>
+		<fieldset>
+				<legend>Sexo:</legend>
+			<input type="radio" name="sexo" id="Hombre" value="h">
+			<br><br>
+			<input type="radio" name="sexo" id="Mujer" value="m">
+			<br><br>
+			<input type="radio" name="sexo" id="Neutro" value="n">
+			<br><br>
+			<input type="radio" name="sexo" id="NoContesta" value="nc" checked="checked">
+			<br><br>
+		</fieldset>
+
+			<input type="checkbox" name=" aficiones" id="cine"value= "cine" checked="checked">
+			<br><br>
+			<input type="checkbox" name="aficiones" id="dormir"value="dormir" checked="checked">
+			<br><br>
+			<input type="checkbox" name="aficiones" id="comer" value="comer" checked="checked">
+			<br><br>
+			<textarea name="comentarios" id="comentarios">Pon algo aquí</textarea>
+			<br><br>
+			<select name="coches" id="Coches"
+				<option value="Ninguna">Escoja una marca</option>
+				<option value="Audi">Audi</option>
+				<option value="Mercedes">Mercedes</option>
+				<option value="BMW">BMW</option>
+			</select>
+			<br><br>
+			<input type="submit" name="submit" id="submit" value="Aprieteme">
+			<input type="reset" name="reset" id="reset" value="Reiniciame">
+			<br><br>
+			
+		</form>
+	</body>	
+</html>

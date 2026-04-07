@@ -1,0 +1,68 @@
+1
+ 
+despues de entrar ahi cogemos el disco y reducimos el espacio
+ 
+despues le damos en vb al disco de la derecha y seleccionamos ubuntu
+ 
+en ubuntu
+ 
+cambiamos desde el default el timeaut a 30
+ 
+2
+
+creamos la carpeta
+ 
+damos permisos
+ 
+despues 
+ 
+ 
+hacemos sudo nano /etc/samba/smb.conf y al final ponemos
+ 
+hacemos ifconfig
+ 
+3
+despues en windows creamos una carpeta compartida dandole a propiedades y compartir y le asignamos los permisos de lectura y escritura
+ 
+Entramos en powershell como administrador y ejecutamos este comando 
+ 
+6.
+despues mediante Crontab -e accedemos a la configuracion donde pondremos que se ejecute la tarea a una hora deterinada del dia, todas las cuentas usuaruio a las 5am todas las semanas
+ 
+7.
+ 
+administrador de equipos: Permite gestionar el sistema como discos dispositivos y usuarios
+Monitor de recursos: Sirve para ver el uso del hardware
+ 
+Informacion del Sistema: este nos da datos como el nombre del sistema operativo, el fabricante o las licencias
+ 
+
+8.
+Read only = y/n permite definir si la carpeta compartida sera solamente de lectura
+Path Determina la ruta de la carpeta
+9
+ 
+
+ 
+este permite crear tareas automaticas, se pueden configurar varias cosas como el nombre la descripcion o el momento en el que se realizara
+ 
+ 
+10
+La herramienta configuracion del sistema permite gestionar el arranque de windows, tambien te deja elegir el tipo de inicio activar o no servicios y programas y configurar opciones avanzadas 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+
+	|CANDIDATAS: DNI,NumMatr,NºSS
+	|PRIMARIAS: Simples(NumMat), Compuestas
+CLAVES	|Alternativas(Candidatas pero que descartamos): DNI, NºSS
+	|Foraneas(No son clave en una tabla pero si en otra)
+
+	
+
+MASCARA DE ENTRADA
+Nº=0(0-9)obligatorio
+Nº=9(0-9)opcional
+Letra=L(a-z)obligatoria
+Letra=?(a-z)opcional
+LoNº=A(a-z,0-1)Obligatorio
+LoNº=a(a-z,0-1)Opcional
+<Minuscula
+<Mayuscula
+\Literal
+
+Que es una clave?
+Es tdo aquel campo que representa de forma unica cada registro de la tabla

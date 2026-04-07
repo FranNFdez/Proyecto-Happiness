@@ -1,0 +1,7 @@
+funciones de disco
+fdisk -l
+fdisk /deu/sda
+particiones
+N nueva particion 
+P particion primaria 4xdisco
+e extendida minimo 1 max x

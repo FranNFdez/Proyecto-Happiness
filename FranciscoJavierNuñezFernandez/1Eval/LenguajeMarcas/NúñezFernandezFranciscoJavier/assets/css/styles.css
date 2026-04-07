@@ -1,0 +1,44 @@
+/*cabecera*/
+.cabecera {
+  background: black;
+  color: white;
+  padding: 2rem;
+}
+
+/*enlaces*/
+.cabecera a {
+  color: palegreen;
+  text-decoration: none;
+}
+
+/*secciones*/
+section {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/*colores*/
+.ordenadores {
+  background: blueviolet;
+}
+
+.moviles {
+  background: coral;
+}
+
+.tablets {
+  background: greenyellow;
+}
+
+/* H2 */
+.ordenadores h2 {
+  color: greenyellow;
+}
+
+.moviles h2 {
+  color: blueviolet;
+}
+
+.tablets h2 {
+  color: coral;
+}

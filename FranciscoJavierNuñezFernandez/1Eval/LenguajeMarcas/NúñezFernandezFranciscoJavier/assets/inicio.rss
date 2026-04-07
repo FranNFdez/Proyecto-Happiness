@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+<channel>
+
+<title>Tu PCera</title>
+<description>Ordenadores, móviles, tablets y más.</description>
+<link>http://localhost/index.html</link>
+
+<item>
+<title>HP</title>
+<description>Primera marca de ordenadores.</description>
+<link>http://localhost/index.html#hp</link>
+<pubDate>Sun, 01 Feb 2026 12:00:00 +0100</pubDate>
+</item>
+
+<item>
+<title>Apple</title>
+<description>Segunda marca de ordenadores.</description>
+<link>http://localhost/index.html#apple</link>
+<pubDate>Sun, 01 Feb 2026 12:00:00 +0100</pubDate>
+</item>
+
+<item>
+<title>Toshiba</title>
+<description>Tercera marca de ordenadores.</description>
+<link>http://localhost/index.html#toshiba</link>
+<pubDate>Sun, 01 Feb 2026 12:00:00 +0100</pubDate>
+</item>
+
+</channel>
+</rss>

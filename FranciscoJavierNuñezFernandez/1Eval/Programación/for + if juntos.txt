@@ -1,0 +1,126 @@
+for + if juntos
+       	
+        Scanner teclado = new Scanner(System.in);
+      for(int cont =1; cont <= 10; cont++){
+      if (cont % 2 == 0){
+              System.out.printf("%d Es par\n",cont);
+      }else
+          System.out.printf("%d Es impar\n",cont);}
+
+
+recorra los números del 1 al 20
+cuente cuántos son múltiplos de 3
+al final muestre el total
+
+ */import java.util.Scanner;
+public class JavaApplication12 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int cont = 0;
+        for (int contador = 0; contador <= 20; contador++){
+            System.out.println(contador);
+
+                if (contador % 3 == 0){
+            cont ++;}
+        
+    }
+System.out.printf("Hay %d numeros multiplos de 3\n",cont);
+    }
+}
+
+
+nota de 10 alumnos
+las notas deben estar entre 0 y 10
+cuente cuántos están suspensos (nota < 5)
+al final muestre el total
+
+    public static void main(String[] args) {
+       Scanner teclado = new Scanner(System.in);
+       double  nota;
+       int suspensos = 0;
+       for (int alumno = 1; alumno <=10; alumno++){
+           System.out.printf("Introduzca la nota del alumno %d\n",alumno);
+           nota = teclado.nextDouble();
+           if (nota < 5){
+           suspensos++;
+           } 
+           if (nota > 10 || nota < 0){
+           System.out.printf("La nota del alumno %d no es valida\n",alumno);
+           alumno--;}
+       }
+       System.out.printf("Han suspendido %d alumnos\n",suspensos);
+
+    }
+}
+
+Crea un método que:
+se llame esMultiploDe3
+reciba un int
+devuelva true si es múltiplo de 3
+
+    public static void main(String[] args) {
+       Scanner teclado = new Scanner(System.in);
+       int num;
+       System.out.println("Introduzca un numero entero");
+       num = teclado.nextInt();
+       if(esMultiploDe3(num)){
+           System.out.println("El numero es multiplo de 3");
+       } else{
+           System.out.println("El numero no es multiplo de 3");
+       }
+       }
+        public static boolean esMultiploDe3(int num) {
+           return num % 3 == 0;
+}
+}
+
+Pedir 10 números enteros por teclado y mostrar cuántos son positivos.
+
+    public static void main(String[] args) {
+       Scanner teclado = new Scanner(System.in);
+       int pos = 0;
+       int numero;
+       for(int cont = 1;cont <= 10; cont++){
+       System.out.println("Introduzca un numero");
+       numero = teclado.nextInt();
+       if (positivonegativo(numero)){
+        pos++;
+       }
+       }
+        System.out.printf("Hay %d numeros positivos\n",pos);
+
+
+    }
+    public static boolean positivonegativo(int numero){
+        if (numero > 0){
+            return true;
+        }
+        else return false;
+    }
+}
+
+números enteros por teclado
+Termine cuando  introduzca un número negativo
+Cuente cuántos números positivos se han introducido
+
+    public static void main(String[] args) {
+       Scanner teclado = new Scanner(System.in);
+       int cont = 0;
+       int num = 0;
+       while (num >= 0){
+           System.out.println("Introduzca un numero");
+           num = teclado.nextInt();
+           if (num > 0){
+               cont++;
+           }
+       }
+       System.out.printf("Ha introducido %d positivos",cont);       
+    }
+}
+
+
+
+ 

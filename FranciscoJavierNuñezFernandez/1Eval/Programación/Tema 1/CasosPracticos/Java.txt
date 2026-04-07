@@ -1,0 +1,74 @@
+	______________________
+	DEFINICIONES FUNCIONES
+	----------------------
+
+NºEntero=int(4 digitos/Bytes)
+
+NºCon decimales=float(4 digitos/Bytes)
+
+NºCon o sin decimales=double(8 digitos/Bytes)
+
+Caracter=char(2 digitos/Bytes)
+
+V/F=boolean (1 digitos/Bytes)
+
+Cadenas de caracteres=String
+
+import java.util.Scaner(Para añadir consultas a teclado)
+
+
+- DECLARACION
+- INICIALIZACION
+
+OPERADORES ARITMETICOS
+
++=sumar
+-=restar
+*=multilicar
+/=dividir
+%=devuelve el resto de una division
+
+OPERADORES RELACIONALES
+
+Mayor>
+Menor<
+Menor-igual<=
+Mayor-igual>=
+Distintos !=
+Igualdad ==
+Asignacion =
+
+*Si*if(Condicion)
+*Haz*()
+*si no* else()
+
+OPERADORES LOGICOS
+And &&
+Or ||
+Not !
+
+OPERADORES UNITARIOS
+
+Contador=cont
+Acumulador=
+++ Creciente
+-- Decreciente
+PRINTS
+	     print(Imprime sin saltar de linea)
+System.out.{ println(Imprime todo y salta de linea)
+	     printf()
+Printf:	%d(Para int)
+	%f
+	%c
+	%s
+	%b
+	\n(Salto de linea)
+	\t(tabulador)
+
+OPERADORES DE ASIGNACION
++=(Suma y el resultado lo guarda en el primero)
+-=(Resta """"""""""""""""""""""""""""""""""""")
+*=(Multiplica)
+/=(Divide)
+%=()
+PARA CONCATENAR STRING = equal y devuelve un boolean

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tienda SYSTEM "deportes.dtd">
+<tienda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="deportes.xsd">
+
+    <deportesTerrestres>
+        <deporte>
+            <nombre>Futbol</nombre>
+            <promocion temporada="verano"/>
+            <descripcion>Deporte de equipo</descripcion>
+            <precio moneda="euro">50</precio>
+            <descuento importe="10">20</descuento>
+            <color>Rojo</color>
+            <color>Azul</color>
+            <pack>Pack basico</pack>
+            <equipos/>
+        </deporte>
+
+        <deporte>
+            <nombre>Snowboard</nombre>
+            <promocion temporada="invierno"/>
+            <descripcion>Deporte individual</descripcion>
+            <precio moneda="euro">40</precio>
+            <descuento importe="15">30</descuento>
+            <color>Blanco</color>
+            <color>Negro</color>
+            <individual/>
+        </deporte>
+
+        <deporte>
+            <nombre>Padel</nombre>
+            <promocion temporada="primavera"/>
+            <descripcion>Deporte de parejas</descripcion>
+            <precio>35</precio>
+            <descuento importe="20">25</descuento>
+            <color>Verde</color>
+            <color>Azul</color>
+            <color>Rojo</color>
+            <pack>Pack avanzado</pack>
+            <parejas/>
+        </deporte>
+    </deportesTerrestres>
+
+
+    <deportesAereos>
+        <deporte>
+            <nombre>Parapente</nombre>
+            <seguro contratar="si">si</seguro>
+        </deporte>
+
+        <deporte>
+            <nombre>Paracaidismo</nombre>
+            <seguro contratar="si">si</seguro>
+        </deporte>
+
+        <deporte>
+            <nombre>AlaDelta</nombre>
+            <seguro>si</seguro>
+        </deporte>
+    </deportesAereos>
+
+
+    <deportesAcuaticos>
+        <deporte>
+            <nombre>Surf</nombre>
+        </deporte>
+
+        <deporte>
+            <nombre>Natacion</deporte>
+        </deporte>
+
+        <deporte>
+            <nombre>Buceo</nombre>
+        </deporte>
+    </deportesAcuaticos>
+</tienda>
+
+
+ 

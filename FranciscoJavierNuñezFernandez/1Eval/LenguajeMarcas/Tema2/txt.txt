@@ -1,0 +1,77 @@
+blo de nots
+estructura
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>titulo</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+imagenes 
+<img src="assets/images/" alt="alternativa a la imagen">
+
+
+tabla
+ <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>titulotabla</th>
+            <th colspan/rowspan="nº">titulotabla</th>
+        </tr>
+
+        <tr>
+            <td>cont</td>
+
+        </tr>
+        <tr>
+            <td>cont</td>
+        </tr>
+        <tr>
+            <td></td>
+           
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td><b></b></td>
+            <td></td>
+        </tr>
+    </table>
+
+listas de definiciones
+
+<dl>
+	<dt>Primer elemento<dl>
+	<dd>Definicion del primer elemento</dd>
+	<dt>Segundo elemento<dl>
+	<dd>Definicion del segundo elemento</dd>
+	<dt>Tercer elemento<dl>
+	<dd>Definicion del tercer elemento</dd>
+</dl>
+
+CAMPOS
+<fieldset>
+	<legend>Sexo:</legend>
+	<input type="radio" name="" id="" value="">
+</fieldset>
+
+	<input type="checkbox" name="" id=""value= "" checked="checked">
+
+	<textarea name="comentarios" id="comentarios">Pon algo aqui</textarea>
+
+<select name="coches" id="Coches"
+<option value="Ninguna">ninguna</option>
+<option value="x">x</option>
+</select>
+
+botones
+<input type="submit" name="submit" id="submit" value="Enviar">
+<input type="reset" name="reset" id="reset" value="Reiniciar">

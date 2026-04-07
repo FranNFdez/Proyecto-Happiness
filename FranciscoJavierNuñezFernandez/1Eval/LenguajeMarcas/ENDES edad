@@ -1,0 +1,43 @@
+public class ValidadorEdad {
+    
+    //Verifica si una persona puede votar (18+ años)
+    public boolean puedeVotar(int edad) {
+        if (edad < 0 || edad > 120) {
+            throw new IllegalArgumentException("Edad inválida");
+        }
+        return edad >= 18;
+    }
+    
+    // Verifica si una persona es menor de edad (menos de 18 años)
+    public boolean esMenorDeEdad(int edad) {
+        if (edad < 0 || edad > 120) {
+            throw new IllegalArgumentException("Edad inválida");
+        }
+        return edad < 18;
+    }
+    
+    //Verifica si una persona es jubilada (65+ años)
+    public boolean esJubilado(int edad) {
+        if (edad < 0 || edad > 120) {
+            throw new IllegalArgumentException("Edad inválida");
+        }
+        return edad >= 65;
+    }
+    
+    //Devuelve la categoría de edad según rangos
+    public String categoriaEdad(int edad) {
+        if (edad < 0 || edad > 120) {
+            throw new IllegalArgumentException("Edad inválida");
+        }
+        
+        if (edad < 13) {
+            return "Niño";
+        } else if (edad <= 17) {
+            return "Adolescente";
+        } else if (edad <= 64) {
+            return "Adulto";
+        } else {
+            return "Senior";
+        }
+    }
+}

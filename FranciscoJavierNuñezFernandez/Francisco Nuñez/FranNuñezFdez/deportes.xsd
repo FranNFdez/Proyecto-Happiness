@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="tienda">
+    <xs:complexType>
+        <xs:sequence>
+
+            <xs:element name="deportesTerrestres">
+                <xs:complexType>
+                    <xs:sequence>
+
+                        <xs:element name="deporte" minOccurs="3" maxOccurs="unbounded">
+                            <xs:complexType>
+
+                                <xs:sequence>
+
+                                    <xs:element name="nombre" type="xs:string"/>
+
+                                    <xs:element name="promocion">
+                                        <xs:complexType>
+                                            <xs:attribute name="temporada" type="xs:string" use="required"/>
+                                        </xs:complexType>
+                                    </xs:element>
+
+                                    <xs:element name="descripcion" type="xs:string"/>
+
+                                    <xs:element name="precio" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:decimal">
+                                                    <xs:attribute name="moneda" type="xs:string"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+
+                                    <xs:element name="descuento">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:integer">
+                                                    <xs:attribute name="importe" type="xs:integer" use="required"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+
+                                    <xs:element name="color" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+
+                                    <xs:element name="pack" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+
+                                    <xs:choice>
+                                        <xs:element name="individual"/>
+                                        <xs:element name="parejas"/>
+                                        <xs:element name="equipos"/>
+                                    </xs:choice>
+
+                                </xs:sequence>
+
+                            </xs:complexType>
+                        </xs:element>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+
+            <xs:element name="deportesAereos">
+                <xs:complexType>
+                    <xs:sequence>
+
+                        <xs:element name="deporte" minOccurs="3" maxOccurs="unbounded">
+                            <xs:complexType>
+
+                                <xs:sequence>
+                                    <xs:element name="nombre" type="xs:string"/>
+
+                                    <xs:element name="seguro">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute name="contratar" type="xs:string"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+
+                                </xs:sequence>
+
+                            </xs:complexType>
+                        </xs:element>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+
+            <xs:element name="deportesAcuaticos">
+                <xs:complexType>
+                    <xs:sequence>
+
+                        <xs:element name="deporte" minOccurs="3" maxOccurs="unbounded">
+                            <xs:complexType>
+
+                                <xs:sequence>
+                                    <xs:element name="nombre" type="xs:string"/>
+                                </xs:sequence>
+
+                            </xs:complexType>
+                        </xs:element>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

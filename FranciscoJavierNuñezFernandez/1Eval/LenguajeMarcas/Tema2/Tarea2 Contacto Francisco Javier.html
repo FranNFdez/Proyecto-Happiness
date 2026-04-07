@@ -1,0 +1,52 @@
+<html>
+ 
+<head>
+<title>Formulario</title>
+</head>
+<body>
+	<ul>
+		<li><a href="./ImagenesyEnlaces.html">Imágenes y enlaces</li>
+		<li><a href="./Contacto.html">Contacto</li>
+		<li><a href="./Index.html">Inicio</li>
+	</ul>
+<h1>Envio de formulario</h1>
+ 
+    <form>
+<label>Nombre: <input type="text" name="nombre"></label><br>
+<label>Apellidos: <input type="text" name="apellidos"></label><br>
+<label>Email: <input type="email" name="email"></label><br>
+<label>Contraseña: <input type="password" name="password"></label><br><br>
+ 
+        <fieldset>
+<legend>Sexo:</legend>
+<label><input type="radio" name="sexo" value="mujer"> Mujer</label><br>
+<label><input type="radio" name="sexo" value="hombre"> Hombre</label><br>
+<label><input type="radio" name="sexo" value="otro"> Otro</label>
+</fieldset>
+ 
+        <fieldset>
+<legend>Aficiones:</legend>
+<label><input type="checkbox" name="aficiones" value="cartas"> Juegos de cartas</label><br>
+<label><input type="checkbox" name="aficiones" value="tablero"> Juegos de tablero</label><br>
+<label><input type="checkbox" name="aficiones" value="cine"> Cine</label>
+</fieldset><br>
+ 
+        <label>Seleccione su provincia:
+<select name="provincia">
+<option value="leon">León</option>
+<option value="madrid">Madrid</option>
+<option value="barcelona">Barcelona</option>
+<option value="sevilla">Sevilla</option>
+</select>
+</label><br><br>
+ 
+        <label>Tus comentarios:<br>
+<textarea name="comentarios" rows="4" cols="30"></textarea>
+</label><br><br>
+ 
+        <input type="reset" value="Reiniciar">
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+ 

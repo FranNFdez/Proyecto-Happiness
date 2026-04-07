@@ -1,0 +1,25 @@
+<!ELEMENT tienda (DeportesTerrestres, DeportesAereos, DeportesAcuaticos)>
+<!ELEMENT DeportesTerrestres (deporte+)>
+<!ELEMENT DeportesAereos (deporte+)>
+<!ELEMENT DeportesAcuaticos (deporte+)>
+
+<!ELEMENT deporte (nombre, promocion?, descripcion?, precio?, descuento?, color*, pack*, (individual | parejas | equipos)?, seguro?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT promocion EMPTY>
+<!ATTLIST promocion
+    temporada CDATA #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio
+    moneda CDATA #IMPLIED>
+<!ELEMENT descuento (#PCDATA)>
+<!ATTLIST descuento
+    importe CDATA #REQUIRED>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT pack (#PCDATA)>
+<!ELEMENT individual EMPTY>
+<!ELEMENT parejas EMPTY>
+<!ELEMENT equipos EMPTY>
+<!ELEMENT seguro (#PCDATA)>
+<!ATTLIST seguro
+    contratar CDATA #IMPLIED>
