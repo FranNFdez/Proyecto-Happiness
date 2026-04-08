@@ -11,6 +11,7 @@ public class Main {
     static ArrayList<Favorito> favoritos = new ArrayList<>();
 
     static int contadorEventos = 0;
+    static int contadorGalerias = 0;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -49,7 +50,8 @@ public class Main {
     }
 
     /* SUBMENUS */
-
+    
+    /* SUBMENU USUARIOS */
     public static void menuUsuarios(Scanner sc) {
         int opcion;
 
@@ -73,7 +75,8 @@ public class Main {
 
         } while(opcion != 3);
     }
-
+    
+    /* SUBMENU EVENTOS */
     public static void menuEventos(Scanner sc) {
         int opcion;
 
@@ -81,7 +84,9 @@ public class Main {
             System.out.println("\n--EVENTOS--");
             System.out.println("1. Añadir evento");
             System.out.println("2. Eliminar evento");
-            System.out.println("3. Volver");
+            System.out.println("3. Añadir galeria");
+            System.out.println("4. Eliminar galeria");
+            System.out.println("5. Volver");
 
             opcion = sc.nextInt();
             sc.nextLine();
@@ -93,11 +98,18 @@ public class Main {
                 case 2:
                     eliminarEvento(sc);
                     break;
+                case 3:
+                    crearGaleria(sc);
+                    break;
+                case 4:
+                    eliminarGaleria(sc);
+                    break;
             }
 
-        } while(opcion != 3);
+        } while(opcion != 5);
     }
 
+    /* SUBMENU FAVORITOS */
     public static void menuFavoritos(Scanner sc) {
         int opcion;
 
@@ -216,6 +228,30 @@ public class Main {
 
         System.out.println("Evento creado correctamente");
     }
+    
+    public static void eliminarEvento(Scanner sc) {
+
+        if (eventos.isEmpty()) {
+            System.out.println("No hay eventos");
+            return;
+        }
+
+        System.out.println("Eventos:");
+        for (Evento e : eventos.values()) {
+            System.out.println(e);
+        }
+
+        System.out.println("Introduce el ID del evento:");
+        int id = sc.nextInt();
+        sc.nextLine();
+
+        if (!eventos.containsKey(id)) {
+            System.out.println("El evento no existe");
+        } else {
+            eventos.remove(id);
+            System.out.println("Evento eliminado correctamente");
+        }
+    }
 
     /* FAVORITOS */
 
@@ -236,10 +272,10 @@ public class Main {
             System.out.println(e);
         }
 
-        System.out.println("Introduce email del usuario:");
+        System.out.println("Introduce el email del usuario:");
         String email = sc.nextLine();
 
-        System.out.println("Introduce ID del evento:");
+        System.out.println("Introduce el ID del evento:");
         int idEvento = sc.nextInt();
         sc.nextLine();
 
@@ -251,7 +287,7 @@ public class Main {
             System.out.println("Favorito creado correctamente");
         }
     }
-
+    
     public static void eliminarFavorito(Scanner sc) {
 
         if (favoritos.isEmpty()) {
@@ -264,26 +300,114 @@ public class Main {
             System.out.println(f);
         }
 
-        System.out.println("Introduce email:");
+        System.out.println("Introduce el email:");
         String email = sc.nextLine();
 
-        System.out.println("Introduce ID evento:");
-        int id = sc.nextInt();
+        System.out.println("Introduce el ID del evento:");
+        int idEvento = sc.nextInt();
         sc.nextLine();
 
-        Favorito encontrado = null;
+        Favorito eliminar = null;
 
         for (Favorito f : favoritos) {
-            if (f.getCorreoUsuario().equals(email) && f.getIdEvento() == id) {
-                encontrado = f;
+            if (f.getCorreoUsuario().equals(email) && f.getIdEvento() == idEvento) {
+                eliminar = f;
             }
         }
 
-        if (encontrado == null) {
+        if (eliminar == null) {
             System.out.println("El favorito no existe");
         } else {
-            favoritos.remove(encontrado);
+            favoritos.remove(eliminar);
             System.out.println("Favorito eliminado correctamente");
+        }
+    }
+    
+    /* GALERIAS */
+    
+    public static void crearGaleria(Scanner sc) {
+
+        if (eventos.isEmpty()) {
+            System.out.println("No hay eventos");
+            return;
+        }
+
+        System.out.println("Eventos:");
+        for (Evento e : eventos.values()) {
+            System.out.println(e);
+        }
+
+        System.out.println("Introduce el ID del evento:");
+        int idEvento = sc.nextInt();
+        sc.nextLine();
+
+        if (!eventos.containsKey(idEvento)) {
+            System.out.println("Evento no existe");
+            return;
+        }
+
+        System.out.println("Introduce el titulo de la galeria:");
+        String titulo = sc.nextLine();
+
+        contadorGalerias++;
+
+        Galeria g = new Galeria(contadorGalerias, titulo, idEvento);
+
+        eventos.get(idEvento).getGalerias().add(g);
+
+        System.out.println("Galeria creada correctamente");
+    }
+    
+    public static void eliminarGaleria(Scanner sc) {
+
+        if (eventos.isEmpty()) {
+            System.out.println("No hay eventos");
+            return;
+        }
+
+        System.out.println("Eventos:");
+        for (Evento e : eventos.values()) {
+            System.out.println(e);
+        }
+
+        System.out.println("Introduce el ID del evento:");
+        int idEvento = sc.nextInt();
+        sc.nextLine();
+
+        if (!eventos.containsKey(idEvento)) {
+            System.out.println("Evento no existe");
+            return;
+        }
+
+        ArrayList<Galeria> galerias = eventos.get(idEvento).getGalerias();
+
+        if (galerias.isEmpty()) {
+            System.out.println("No hay galerias");
+            return;
+        }
+
+        System.out.println("Galerias:");
+        for (Galeria g : galerias) {
+            System.out.println(g);
+        }
+
+        System.out.println("Introduce el ID de la galeria:");
+        int id = sc.nextInt();
+        sc.nextLine();
+
+        Galeria eliminar = null;
+
+        for (Galeria g : galerias) {
+            if (g.getId() == id) {
+                eliminar = g;
+            }
+        }
+
+        if (eliminar == null) {
+            System.out.println("La galeria no existe");
+        } else {
+            galerias.remove(eliminar);
+            System.out.println("Galeria eliminada correctamente");
         }
     }
 }
