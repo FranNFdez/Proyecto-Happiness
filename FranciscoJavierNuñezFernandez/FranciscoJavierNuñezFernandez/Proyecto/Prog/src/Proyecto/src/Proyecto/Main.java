@@ -62,7 +62,7 @@ public class Main {
             opcion = sc.nextInt();
             sc.nextLine();
 
-            switch(opcion) {
+            switch (opcion) {
                 case 1:
                     crearUsuario(sc);
                     break;
@@ -71,7 +71,7 @@ public class Main {
                     break;
             }
 
-        } while(opcion != 3);
+        } while (opcion != 3);
     }
 
     public static void menuEventos(Scanner sc) {
@@ -86,7 +86,7 @@ public class Main {
             opcion = sc.nextInt();
             sc.nextLine();
 
-            switch(opcion) {
+            switch (opcion) {
                 case 1:
                     crearEvento(sc);
                     break;
@@ -95,7 +95,7 @@ public class Main {
                     break;
             }
 
-        } while(opcion != 3);
+        } while (opcion != 3);
     }
 
     public static void menuFavoritos(Scanner sc) {
@@ -110,7 +110,7 @@ public class Main {
             opcion = sc.nextInt();
             sc.nextLine();
 
-            switch(opcion) {
+            switch (opcion) {
                 case 1:
                     crearFavorito(sc);
                     break;
@@ -119,12 +119,12 @@ public class Main {
                     break;
             }
 
-        } while(opcion != 3);
+        } while (opcion != 3);
     }
 
     /* USUARIOS */
 
-    public static void crearUsuario(Scanner sc){
+    public static void crearUsuario(Scanner sc) {
         System.out.println("Introduzca su nombre:");
         String nombre = sc.nextLine();
 
@@ -134,7 +134,7 @@ public class Main {
         String password;
         String confirmarpassword;
 
-        do{
+        do {
             System.out.println("Introduce su contraseña:");
             password = sc.nextLine();
 
@@ -156,7 +156,7 @@ public class Main {
         }
     }
 
-    public static void eliminarUsuario(Scanner sc){
+    public static void eliminarUsuario(Scanner sc) {
         System.out.println("Introduce el email del usuario a eliminar:");
         String email = sc.nextLine();
 
@@ -194,7 +194,7 @@ public class Main {
 
         String tipo;
 
-        switch(opcionTipo) {
+        switch (opcionTipo) {
             case 1:
                 tipo = "Motor";
                 break;
