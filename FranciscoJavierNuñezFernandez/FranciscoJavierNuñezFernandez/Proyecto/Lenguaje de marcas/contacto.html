@@ -3,34 +3,77 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Happiness&Co</title>
+        <title>Contacto - Happiness&Co</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
 
     <body class="bg-gray-100 flex flex-col min-h-screen">
 
         <!--Header-->
         <header class="bg-[#ba007c] text-white p-4 flex items-center gap-4">
-            <img src="img/logo/logo_happiness_rosa-variante.jpg" class="h-10">
+            <img src="assets/img/logo/logo_happiness_rosa-variante.jpg" class="h-10">
             <h1 class="text-3xl font-bold">Happiness&Co</h1>
         </header>
 
         <!--Navegacion-->
         <nav class="bg-gray-800 text-white p-3">
             <ul class="flex gap-4">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="historial.html">Historial</a></li>
-                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="fuentes.html">Fuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="index.html" class="hover:underline">Inicio</a></li>
+                <li><a href="eventos.html" class="hover:underline">Eventos</a></li>
+                <li><a href="historial.html" class="hover:underline">Historial</a></li>
+                <li><a href="sobre-nosotros.html" class="hover:underline">Sobre nosotros</a></li>
+                <li><a href="fuentes.html" class="hover:underline">Fuentes</a></li>
+                <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
             </ul>
         </nav>
 
         <!--Contenido-->
-        <main class="flex-grow p-6">
-            <h2 class="text-2xl font-bold">Contenido aquí</h2>
+        <main class="flex flex-grow">
+
+            <!--ContenidoPrincipal-->
+            <section class="w-3/4 p-6">
+
+                <h2 class="text-2xl font-bold mb-6">Contacto</h2>
+
+                <!--Formulario-->
+                <form class="bg-white p-6 rounded shadow-md max-w-lg">
+
+                    <!--Nombre-->
+                    <label class="block mb-2 font-semibold">Nombre</label>
+                    <input type="text" class="w-full mb-4 p-2 border rounded" placeholder="Tu nombre" required>
+
+                    <!--Apellidos-->
+                    <label class="block mb-2 font-semibold">Apellidos</label>
+                    <input type="text" class="w-full mb-4 p-2 border rounded" placeholder="Tus apellidos" required>
+
+                    <!--Email-->
+                    <label class="block mb-2 font-semibold">Email</label>
+                    <input type="email" class="w-full mb-4 p-2 border rounded" placeholder="ejemplo@email.com" required>
+
+                    <!--Telefono-->
+                    <label class="block mb-2 font-semibold">Teléfono</label>
+                    <input type="tel" class="w-full mb-4 p-2 border rounded" placeholder="666 999 666">
+
+                    <!--Comentario-->
+                    <label class="block mb-2 font-semibold">Comentario</label>
+                    <textarea class="w-full mb-4 p-2 border rounded" rows="4" placeholder="Escribe tu mensaje"></textarea>
+
+                    <!--Checkbox-->
+                    <div class="mb-4 flex items-center gap-2">
+                        <input type="checkbox">
+                        <label>Acepto recibir información sobre eventos</label>
+                    </div>
+
+                    <!--Boton-->
+                    <button class="bg-[#ba007c] text-white px-4 py-2 rounded hover:bg-pink-700 transition">
+                        Enviar
+                    </button>
+
+                </form>
+
+            </section>
+
         </main>
 
         <!--Footer-->
