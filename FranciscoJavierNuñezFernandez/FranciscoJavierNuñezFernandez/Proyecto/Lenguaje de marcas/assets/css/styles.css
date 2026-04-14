@@ -1,0 +1,121 @@
+/*--FUENTES--*/
+@font-face {
+    font-family: "Titulo";
+    src: url("../fonts/ARCHRISTY.ttf");
+}
+
+@font-face {
+    font-family: "Texto";
+    src: url("../fonts/ASENINE.ttf");
+}
+
+
+/*--BASE--*/
+body {
+    font-family: "Texto", sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+}
+
+
+/*--TITULOS/LOGO--*/
+h1, h2 {
+    font-family: "Titulo", sans-serif;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-family: "Texto", sans-serif;
+}
+
+
+/*--HEADER--*/
+header {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-family: "Titulo";
+}
+
+
+/*--NAVEGACION--*/
+nav ul li a {
+    font-family: "Texto";
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ba007c;
+}
+
+
+/*--CONTENIDO--*/
+section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/*--EVENTOS--*/
+.event-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.02);
+}
+
+
+/*--ETIQUETAS_CATEGORIA--*/
+.tag-motor {
+    background-color: #ba007c;
+    color: white;
+}
+
+.tag-musica {
+    background-color: #009bdb;
+    color: white;
+}
+
+.tag-skate {
+    background-color: #ff7b00;
+    color: white;
+}
+
+
+/*--IMAGENES--*/
+img {
+    border-radius: 8px;
+}
+
+
+/*--GALERIA--*/
+.grid img {
+    transition: 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+
+/*--LINKS--*/
+a {
+    text-decoration: none;
+}
+
+
+/*--FOOTER--*/
+footer {
+    margin-top: auto;
+    font-size: 14px;
+}
+
+
+/*--SCROLL--*/
+html {
+    scroll-behavior: smooth;
+}

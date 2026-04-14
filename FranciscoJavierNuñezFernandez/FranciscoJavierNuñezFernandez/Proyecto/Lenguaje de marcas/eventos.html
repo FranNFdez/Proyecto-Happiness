@@ -1,253 +1,270 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happiness&Co</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Happiness&Co</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
 
-<body class="bg-gray-100 flex flex-col min-h-screen">
+    <body class="bg-gray-100 flex flex-col min-h-screen">
 
-    <!--Header-->
-    <header class="bg-[#ba007c] text-white p-4 flex items-center gap-4">
-        <img src="assets/img/logo/logo_happiness_rosa-variante.jpg" class="h-10">
-        <h1 class="text-3xl font-bold">Happiness&Co</h1>
-    </header>
+        <!--Header-->
+        <header class="bg-[#ba007c] text-white p-4 flex items-center gap-4">
+            <img src="assets/img/logo/logo_happiness_rosa-variante.jpg" class="h-10">
+            <h1 class="text-3xl font-bold">Happiness&Co</h1>
+        </header>
 
-    <!--Navegacion-->
-    <nav class="bg-gray-800 text-white p-3">
-        <ul class="flex gap-4">
-            <li><a href="index.html" class="hover:underline">Inicio</a></li>
-            <li><a href="eventos.html" class="hover:underline">Eventos</a></li>
-            <li><a href="historial.html" class="hover:underline">Historial</a></li>
-            <li><a href="sobre-nosotros.html" class="hover:underline">Sobre nosotros</a></li>
-            <li><a href="fuentes.html" class="hover:underline">Fuentes</a></li>
-            <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
-        </ul>
-    </nav>
+        <!--Navegacion-->
+        <nav class="bg-gray-800 text-white p-3">
+            <ul class="flex gap-4">
+                <li><a href="index.html" class="hover:underline">Inicio</a></li>
+                <li><a href="eventos.html" class="hover:underline">Eventos</a></li>
+                <li><a href="historial.html" class="hover:underline">Historial</a></li>
+                <li><a href="sobre-nosotros.html" class="hover:underline">Sobre nosotros</a></li>
+                <li><a href="fuentes.html" class="hover:underline">Fuentes</a></li>
+                <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+            </ul>
+        </nav>
 
-    <!--Contenido-->
-    <main class="flex">
+        <!--Contenido-->
+        <main class="flex">
 
-        <!--ContenidoPrincipal-->
-        <section class="w-3/4 p-6">
+            <!--ContenidoPrincipal-->
+            <section class="w-3/4 p-6">
 
-            <h2 class="text-2xl font-bold mb-6">Próximos eventos</h2>
-            <!--SelectorCategorias-->
-            <div class="flex gap-4 mb-6">
+                <h2 class="text-2xl font-bold mb-6">Próximos eventos</h2>
+                <!--SelectorCategorias-->
+                <div class="flex gap-4 mb-6">
 
-                <a href="#todos" class="bg-gray-300 px-4 py-2 rounded hover:bg-gray-400">Todos</a>
+                    <a href="#todos" class="bg-gray-300 px-4 py-2 rounded hover:bg-gray-400">Todos</a>
 
-                <a href="#motor" class="bg-[#ba007c] text-white px-4 py-2 rounded">Motor</a>
+                    <a href="#motor" class="bg-[#ba007c] text-white px-4 py-2 rounded">Motor</a>
 
-                <a href="#musica" class="bg-[#009bdb] text-white px-4 py-2 rounded">Música</a>
+                    <a href="#musica" class="bg-[#009bdb] text-white px-4 py-2 rounded">Música</a>
 
-                <a href="#skate" class="bg-[#ff7b00] text-white px-4 py-2 rounded">Skate</a>
-
-            </div>
-
-            <!--Motor-->
-            <h3 id="motor" class="text-xl font-bold mb-4">Motor</h3>
-                    
-            <!--Evento1 Motor-->
-            <a href="evento_futuro1.html" class="block group mb-6">
-                <div class="relative overflow-hidden rounded shadow-lg">
-
-                    <img src="assets/img/eventos/DriftSpainRound2.png" class="w-full h-48 object-cover">
-
-                    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-
-                    <div class="absolute bottom-0 p-4 text-white">
-                        <h3 class="text-lg font-bold">Drift Spain 2026</h3>
-                        <div class="flex gap-2 items-center mt-1">
-                            <span class="text-xs bg-[#ba007c] px-2 py-1 rounded">Motor</span>
-                            <span class="text-xs text-gray-200">05/06/2026</span>
-                        </div>
-                    </div>
-
-                    <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm text-center">Por primera vez, Drift Spain aterriza en el Circuito Aspar y eso significa una cosa: nadie viene con ventaja.</p>
-                        <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
-                    </div>
+                    <a href="#skate" class="bg-[#ff7b00] text-white px-4 py-2 rounded">Skate</a>
 
                 </div>
-            </a>
 
-            <!--Evento2 Motor-->
-            <a href="evento_futuro2.html" class="block group mb-6">
-                <div class="relative overflow-hidden rounded shadow-lg">
+                <!--Motor-->
+                <h3 id="motor" class="text-xl font-bold mb-4">Motor</h3>
+                        
+                <!--Evento1 Motor-->
+                <a href="evento_futuro1.html" class="block group mb-6">
+                    <div class="relative overflow-hidden rounded shadow-lg">
 
-                    <img src="assets/img/eventos/Eurocrew.PNG" class="w-full h-48 object-cover">
+                        <img src="assets/img/eventos/DriftSpainRound2.png" class="w-full h-48 object-cover">
 
-                    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
-                    <div class="absolute bottom-0 p-4 text-white">
-                        <h3 class="text-lg font-bold">Eurocrew Navarra 2026</h3>
-                        <div class="flex gap-2 items-center mt-1">
-                            <span class="text-xs bg-[#ba007c] px-2 py-1 rounded">Motor</span>
-                            <span class="text-xs text-gray-200">15/06/2026</span>
+                        <div class="absolute bottom-0 p-4 text-white">
+                            <h3 class="text-lg font-bold">Drift Spain 2026</h3>
+                            <div class="flex gap-2 items-center mt-1">
+                                <span class="text-xs bg-[#ba007c] px-2 py-1 rounded">Motor</span>
+                                <span class="text-xs text-gray-200">05/06/2026</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm text-center">Evento con coches modificados, drift profesional y trackday.</p>
-                        <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
-                    </div>
-
-                </div>
-            </a>
-
-            <!--Evento3 Motor-->
-            <a href="evento_futuro3.html" class="block group mb-6">
-                <div class="relative overflow-hidden rounded shadow-lg">
-
-                    <img src="assets/img/eventos/SecretBattle2026banner.png" class="w-full h-48 object-cover">
-
-                    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-
-                    <div class="absolute bottom-0 p-4 text-white">
-                        <h3 class="text-lg font-bold">Secret Battle 2026</h3>
-                        <div class="flex gap-2 items-center mt-1">
-                            <span class="text-xs bg-[#ba007c] px-2 py-1 rounded">Motor</span>
-                            <span class="text-xs text-gray-200">25/06/2026</span>
+                        <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <p class="text-sm text-center">Por primera vez, Drift Spain aterriza en el Circuito Aspar y eso significa una cosa: nadie viene con ventaja.</p>
+                            <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
                         </div>
+
                     </div>
+                </a>
 
-                    <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm text-center">Evento de competición con ambiente y estilos únicos.</p>
-                        <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
-                    </div>
+                <!--Evento2 Motor-->
+                <a href="evento_futuro2.html" class="block group mb-6">
+                    <div class="relative overflow-hidden rounded shadow-lg">
 
-                </div>
-            </a>
+                        <img src="assets/img/eventos/Eurocrew.PNG" class="w-full h-48 object-cover">
 
+                        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
-            <!--Musica-->
-            <h3 id="musica" class="text-xl font-bold mb-4">Música</h3>
-
-            <!--Evento1 Musica-->
-            <a href="evento_futuro4.html" class="block group mb-6">
-                <div class="relative overflow-hidden rounded shadow-lg">
-
-                    <img src="assets/img/eventos/lanna_overlay.png" class="w-full h-48 object-cover">
-
-                    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-
-                    <div class="absolute bottom-0 p-4 text-white">
-                        <h3 class="text-lg font-bold">Lanna Festival 2026</h3>
-                        <div class="flex gap-2 items-center mt-1">
-                            <span class="text-xs bg-[#009bdb] px-2 py-1 rounded">Música</span>
-                            <span class="text-xs text-gray-200">26/09/2026 y 27/09/2026</span>
+                        <div class="absolute bottom-0 p-4 text-white">
+                            <h3 class="text-lg font-bold">Eurocrew Navarra 2026</h3>
+                            <div class="flex gap-2 items-center mt-1">
+                                <span class="text-xs bg-[#ba007c] px-2 py-1 rounded">Motor</span>
+                                <span class="text-xs text-gray-200">15/06/2026</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm text-center">Lanna Festival regresa al LABoral Centro de Arte de Gijón, consolidándose como un referente en el ámbito de la música electrónica.</p>
-                        <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
-                    </div>
-
-                </div>
-            </a>
-
-            <!--Evento2 Musica-->
-            <a href="evento_futuro5.html" class="block group mb-6">
-                <div class="relative overflow-hidden rounded shadow-lg">
-
-                    <img src="assets/img/eventos/ClausuraFest.png" class="w-full h-48 object-cover">
-
-                    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-
-                    <div class="absolute bottom-0 p-4 text-white">
-                        <h3 class="text-lg font-bold">Clausura Festival 2026</h3>
-                        <div class="flex gap-2 items-center mt-1">
-                            <span class="text-xs bg-[#009bdb] px-2 py-1 rounded">Música</span>
-                            <span class="text-xs text-gray-200">30/08/2026</span>
+                        <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <p class="text-sm text-center">Evento con coches modificados, drift profesional y trackday.</p>
+                            <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
                         </div>
+
                     </div>
+                </a>
 
-                    <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm text-center">Viene la segunda edición de Clausura Festival con artistas nacionales e internacionales.</p>
-                        <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
-                    </div>
+                <!--Evento3 Motor-->
+                <a href="evento_futuro3.html" class="block group mb-6">
+                    <div class="relative overflow-hidden rounded shadow-lg">
 
-                </div>
-            </a>
+                        <img src="assets/img/eventos/SecretBattle2026banner.png" class="w-full h-48 object-cover">
 
-            <!--Skate-->
-            <h3 id="Skate" class="text-xl font-bold mb-4">Skate</h3>
+                        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
-            <!--Evento1 Skate-->
-            <a href="evento_futuro6.html" class="block group mb-6">
-                <div class="relative overflow-hidden rounded shadow-lg">
-
-                    <img src="assets/img/eventos/ElGochu.png" class="w-full h-48 object-cover">
-
-                    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-
-                    <div class="absolute bottom-0 p-4 text-white">
-                        <h3 class="text-lg font-bold">Gochu Skate Contest 2026</h3>
-                        <div class="flex gap-2 items-center mt-1">
-                            <span class="text-xs bg-[#ff7b00] px-2 py-1 rounded">Skate</span>
-                            <span class="text-xs text-gray-200">16/09/2026</span>
+                        <div class="absolute bottom-0 p-4 text-white">
+                            <h3 class="text-lg font-bold">Secret Battle 2026</h3>
+                            <div class="flex gap-2 items-center mt-1">
+                                <span class="text-xs bg-[#ba007c] px-2 py-1 rounded">Motor</span>
+                                <span class="text-xs text-gray-200">25/06/2026</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm text-center">Vuelve un año más el evento clásico de Noreña con el mejor ambiente, música, premios y sobre todo engorile.</p>
-                        <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
-                    </div>
-
-                </div>
-            </a>
-
-            <!--Evento7 Skate-->
-            <a href="evento_futuro7.html" class="block group mb-6">
-                <div class="relative overflow-hidden rounded shadow-lg">
-
-                    <img src="assets/img/eventos/macba.png" class="w-full h-48 object-cover">
-
-                    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-
-                    <div class="absolute bottom-0 p-4 text-white">
-                        <h3 class="text-lg font-bold">Save the MACBA Contest</h3>
-                        <div class="flex gap-2 items-center mt-1">
-                            <span class="text-xs bg-[#ff7b00] px-2 py-1 rounded">Skate</span>
-                            <span class="text-xs text-gray-200">25/11/2026</span>
+                        <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <p class="text-sm text-center">Evento de competición con ambiente y estilos únicos.</p>
+                            <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
                         </div>
+
                     </div>
+                </a>
 
-                    <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm text-center">Competición para salvar la histórica plaza MACBA con skaters nacionales e internacionales.</p>
-                        <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
+
+                <!--Musica-->
+                <h3 id="musica" class="text-xl font-bold mb-4">Música</h3>
+
+                <!--Evento1 Musica-->
+                <a href="evento_futuro4.html" class="block group mb-6">
+                    <div class="relative overflow-hidden rounded shadow-lg">
+
+                        <img src="assets/img/eventos/lanna_overlay.png" class="w-full h-48 object-cover">
+
+                        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+                        <div class="absolute bottom-0 p-4 text-white">
+                            <h3 class="text-lg font-bold">Lanna Festival 2026</h3>
+                            <div class="flex gap-2 items-center mt-1">
+                                <span class="text-xs bg-[#009bdb] px-2 py-1 rounded">Música</span>
+                                <span class="text-xs text-gray-200">26/09/2026 y 27/09/2026</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <p class="text-sm text-center">Lanna Festival regresa al LABoral Centro de Arte de Gijón, consolidándose como un referente en el ámbito de la música electrónica.</p>
+                            <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
+                        </div>
+
                     </div>
+                </a>
 
-                </div>
-            </a>
+                <!--Evento2 Musica-->
+                <a href="evento_futuro5.html" class="block group mb-6">
+                    <div class="relative overflow-hidden rounded shadow-lg">
 
-        </section>
+                        <img src="assets/img/eventos/ClausuraFest.png" class="w-full h-48 object-cover">
 
-        <!--Lateral-->
-        <aside class="w-1/4 p-6 bg-gray-200">
-            <h2 class="font-bold mb-4">Recomendados</h2>
+                        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
-            <div class="mb-4">
-                <p class="text-sm">12-01-2026</p>
-                <p class="font-bold">Evento recomendado</p>
-            </div>
+                        <div class="absolute bottom-0 p-4 text-white">
+                            <h3 class="text-lg font-bold">Clausura Festival 2026</h3>
+                            <div class="flex gap-2 items-center mt-1">
+                                <span class="text-xs bg-[#009bdb] px-2 py-1 rounded">Música</span>
+                                <span class="text-xs text-gray-200">30/08/2026</span>
+                            </div>
+                        </div>
 
-            <div>
-                <p class="text-sm">24-01-2026</p>
-                <p class="font-bold">Otro evento</p>
-            </div>
-        </aside>
+                        <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <p class="text-sm text-center">Viene la segunda edición de Clausura Festival con artistas nacionales e internacionales.</p>
+                            <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
+                        </div>
 
-    </main>
+                    </div>
+                </a>
 
-    <!--Footer-->
-    <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
-        <p>&copy; 2026 Happiness&Co</p>
-    </footer>
+                <!--Skate-->
+                <h3 id="Skate" class="text-xl font-bold mb-4">Skate</h3>
 
-</body>
+                <!--Evento1 Skate-->
+                <a href="evento_futuro6.html" class="block group mb-6">
+                    <div class="relative overflow-hidden rounded shadow-lg">
+
+                        <img src="assets/img/eventos/ElGochu.png" class="w-full h-48 object-cover">
+
+                        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+                        <div class="absolute bottom-0 p-4 text-white">
+                            <h3 class="text-lg font-bold">Gochu Skate Contest 2026</h3>
+                            <div class="flex gap-2 items-center mt-1">
+                                <span class="text-xs bg-[#ff7b00] px-2 py-1 rounded">Skate</span>
+                                <span class="text-xs text-gray-200">16/09/2026</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <p class="text-sm text-center">Vuelve un año más el evento clásico de Noreña con el mejor ambiente, música, premios y sobre todo engorile.</p>
+                            <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!--Evento7 Skate-->
+                <a href="evento_futuro7.html" class="block group mb-6">
+                    <div class="relative overflow-hidden rounded shadow-lg">
+
+                        <img src="assets/img/eventos/macba.png" class="w-full h-48 object-cover">
+
+                        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+                        <div class="absolute bottom-0 p-4 text-white">
+                            <h3 class="text-lg font-bold">Save the MACBA Contest</h3>
+                            <div class="flex gap-2 items-center mt-1">
+                                <span class="text-xs bg-[#ff7b00] px-2 py-1 rounded">Skate</span>
+                                <span class="text-xs text-gray-200">25/11/2026</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <p class="text-sm text-center">Competición para salvar la histórica plaza MACBA con skaters nacionales e internacionales.</p>
+                            <span class="text-blue-400 font-semibold mt-2">Ver más →</span>
+                        </div>
+
+                    </div>
+                </a>
+
+            </section>
+            
+            <!--Lateral-->
+            <aside class="w-1/4 p-6 bg-gray-200">
+
+                <h2 class="font-bold mb-4">Recomendados</h2>
+
+                <!--Recomendado1-->
+                <a href="evento_futuro3.html" class="block mb-4">
+                    <div class="bg-white p-3 shadow hover:shadow-lg transition">
+
+                        <img src="assets/img/eventos/SecretBattle2026banner.png" class="w-full h-24 object-cover mb-2">
+
+                        <p class="text-sm text-gray-500">25/06/2026</p>
+                        <p class="font-bold">Secret Battle 2026</p>
+
+                    </div>
+                </a>
+
+                <!--Recomendado2-->
+                <a href="evento_futuro6.html" class="block">
+                    <div class="bg-white p-3 shadow hover:shadow-lg transition">
+
+                        <img src="assets/img/eventos/ElGochu.png" class="w-full h-24 object-cover mb-2">
+
+                        <p class="text-sm text-gray-500">16/09/2026</p>
+                        <p class="font-bold">Gochu Skate Contest</p>
+
+                    </div>
+                </a>
+
+            </aside>
+
+        </main>
+
+        <!--Footer-->
+        <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
+            <p>&copy; 2026 Happiness&Co</p>
+        </footer>
+
+    </body>
 </html>
