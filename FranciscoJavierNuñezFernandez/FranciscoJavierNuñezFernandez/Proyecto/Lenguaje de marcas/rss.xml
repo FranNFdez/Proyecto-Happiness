@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        
+        <title>Happiness&Co</title>
+            <link>http://localhost/</link>
+            <description>Eventos de motor, música y skate en una sola plataforma</description>
+            
+            <!--Evento1 Motor-->
+            <item>
+                <title>Drift Spain 2026</title>
+                <link>evento_futuro1.html</link>
+                <description>Evento de drift en el Circuito Aspar con pilotos nacionales.</description>
+                <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+            </item>
+            
+            <!--Evento2 Motor-->
+            <item>
+                <title>Eurocrew Navarra 2026</title>
+                <link>evento_futuro2.html</link>
+                <description>Evento con coches modificados, drift y actividades en pista.</description>
+                <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+            </item>
+            
+            <!--Evento3 Motor-->
+            <item>
+                <title>Secret Battle 2026</title>
+                <link>evento_futuro3.html</link>
+                <description>Competición automovilística con estilo único y ambiente competitivo.</description>
+                <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+            </item>
+            
+            <!--Evento4 Música-->
+            <item>
+                <title>Lanna Festival 2026</title>
+                <link>evento_futuro4.html</link>
+                <description>Festival de música electrónica en el LABoral Centro de Arte.</description>
+                <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+            </item>
+            
+            <!--Evento5 Música-->
+            <item>
+                <title>Clausura Festival 2026</title>
+                <link>evento_futuro5.html</link>
+                <description>Festival con artistas nacionales e internacionales.</description>
+                <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+            </item>
+            
+            <!--Evento6 Skate-->
+            <item>
+                <title>Gochu Skate Contest 2026</title>
+                <link>evento_futuro6.html</link>
+                <description>Competición de skate con música, premios y ambiente urbano.</description>
+                <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+            </item>
+            
+            <!--Evento7 Skate-->
+            <item>
+                <title>Save the MACBA Contest</title>
+                <link>evento_futuro7.html</link>
+                <description>Evento de skate para defender la cultura urbana en MACBA.</description>
+                <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+            </item>
+            
+        </channel>
+
+    </rss>

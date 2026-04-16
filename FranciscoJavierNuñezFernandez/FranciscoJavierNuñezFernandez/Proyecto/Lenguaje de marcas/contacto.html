@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto - Happiness&Co</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
     </head>
 
     <body class="bg-gray-100 flex flex-col min-h-screen">
@@ -37,27 +37,27 @@
                 <h2 class="text-2xl font-bold mb-6">Contacto</h2>
 
                 <!--Formulario-->
-                <form class="bg-white p-6 rounded shadow-md max-w-lg">
+                <form class="bg-white p-6 rounded shadow max-w-lg">
 
                     <!--Nombre-->
                     <label class="block mb-2 font-semibold">Nombre</label>
-                    <input type="text" class="w-full mb-4 p-2 border rounded" placeholder="Tu nombre" required>
+                    <input type="text" class="w-full mb-4 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#ba007c]" placeholder="Tu nombre" required>
 
                     <!--Apellidos-->
                     <label class="block mb-2 font-semibold">Apellidos</label>
-                    <input type="text" class="w-full mb-4 p-2 border rounded" placeholder="Tus apellidos" required>
+                    <input type="text" class="w-full mb-4 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#ba007c]" placeholder="Tus apellidos" required>
 
                     <!--Email-->
                     <label class="block mb-2 font-semibold">Email</label>
-                    <input type="email" class="w-full mb-4 p-2 border rounded" placeholder="ejemplo@email.com" required>
+                    <input type="email" class="w-full mb-4 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#ba007c]" placeholder="ejemplo@email.com" required>
 
                     <!--Telefono-->
                     <label class="block mb-2 font-semibold">Teléfono</label>
-                    <input type="tel" class="w-full mb-4 p-2 border rounded" placeholder="666 999 666">
+                    <input type="tel" class="w-full mb-4 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#ba007c]" placeholder="666 999 666">
 
                     <!--Comentario-->
                     <label class="block mb-2 font-semibold">Comentario</label>
-                    <textarea class="w-full mb-4 p-2 border rounded" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                    <textarea class="w-full mb-4 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#ba007c]" rows="4" placeholder="Escribe tu mensaje"></textarea>
 
                     <!--Checkbox-->
                     <div class="mb-4 flex items-center gap-2">
@@ -66,7 +66,7 @@
                     </div>
 
                     <!--Boton-->
-                    <button class="bg-[#ba007c] text-white px-4 py-2 rounded hover:bg-pink-700 transition">
+                    <button class="bg-[#ba007c] text-white px-4 py-2 rounded shadow hover:bg-pink-700 transition">
                         Enviar
                     </button>
 
@@ -74,10 +74,42 @@
 
             </section>
 
+            <!--Lateral-->
+            <aside class="w-1/4 p-6 bg-gray-200">
+
+                <h2 class="font-bold mb-4">Recomendados</h2>
+
+                <!--Recomendado1-->
+                <a href="evento_futuro3.html" class="block mb-4">
+                    <div class="bg-white p-3 shadow hover:shadow-lg transition rounded">
+
+                        <img src="assets/img/eventos/SecretBattle2026banner.png" class="w-full h-24 object-cover mb-2 rounded">
+
+                        <p class="text-sm text-gray-500">25/06/2026</p>
+                        <p class="font-bold">Secret Battle 2026</p>
+
+                    </div>
+                </a>
+
+                <!--Recomendado2-->
+                <a href="evento_futuro6.html" class="block">
+                    <div class="bg-white p-3 shadow hover:shadow-lg transition rounded">
+
+                        <img src="assets/img/eventos/ElGochu.png" class="w-full h-24 object-cover mb-2 rounded">
+
+                        <p class="text-sm text-gray-500">16/09/2026</p>
+                        <p class="font-bold">Gochu Skate Contest</p>
+
+                    </div>
+                </a>
+
+            </aside>
+
         </main>
 
         <!--Footer-->
-        <footer class="bg-gray-800 text-white p-4 text-center">
+        <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
+            <a href="rss.xml" class="text-blue-400">RSS</a>
             <p>&copy; 2026 Happiness&Co</p>
         </footer>
 

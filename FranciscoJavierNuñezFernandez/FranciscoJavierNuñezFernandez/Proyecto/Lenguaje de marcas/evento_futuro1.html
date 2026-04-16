@@ -13,45 +13,59 @@
         <!--Header-->
         <header class="bg-[#ba007c] text-white p-4 flex items-center gap-4">
             <img src="assets/img/logo/logo_happiness_gris.jpg" class="h-10">
-            <h1 class="text-3xl font-bold">Happiness&Co</h1>
         </header>
 
         <!--Navegacion-->
         <nav class="bg-gray-800 text-white p-3">
             <ul class="flex gap-4">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="historial.html">Historial</a></li>
-                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="fuentes.html">Fuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="index.html" class="hover:underline">Inicio</a></li>
+                <li><a href="eventos.html" class="hover:underline">Eventos</a></li>
+                <li><a href="historial.html" class="hover:underline">Historial</a></li>
+                <li><a href="sobre-nosotros.html" class="hover:underline">Sobre nosotros</a></li>
+                <li><a href="fuentes.html" class="hover:underline">Fuentes</a></li>
+                <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
             </ul>
         </nav>
 
         <!--Contenido-->
-        <main class="flex-grow flex">
+        <main class="flex flex-grow">
 
             <!--ContenidoPrincipal-->
             <section class="w-3/4 p-6">
 
                 <!--ImagenEvento-->
-                <img src="assets/img/eventos/DriftSpainRound2.png" class="w-full h-80 object-cover mb-6">
+                <img src="assets/img/eventos/DriftSpainRound2.png" class="w-full h-72 object-cover rounded mb-6 shadow">
 
                 <!--Titulo-->
-                <h2 class="text-3xl font-bold mb-2">Drift Spain 2026</h2>
+                <h2 class="text-3xl font-bold mb-2 text-[#ba007c]">
+                    Drift Spain 2026
+                </h2>
 
                 <!--FechaUbicacion-->
-                <p class="text-gray-500 mb-2">05 de Junio de 2026 | <a href="https://www.google.com/maps?q=Circuito+Aspar+Valencia" 
-                target="_blank" 
-                class="hover:underline">Circuito Aspar Valencia </p></a>
+                <p class="text-gray-500 mb-4">
+                    05 de Junio de 2026 |
+                    <a href="https://www.google.com/maps?q=Circuito+Aspar+Valencia"
+                    target="_blank"
+                    class="hover:underline text-blue-500">
+                        Circuito Aspar, Valencia
+                    </a>
+                </p>
 
                 <!--Categoria-->
                 <p class="text-sm font-bold text-[#ba007c] mb-4">Motor</p>
 
                 <!--Descripcion-->
-                <p class="mb-6">Drift Spain Series es un campeonato oficial de drifting en España que reúne a algunos de los mejores pilotos y vehículos preparados para esta disciplina, ofreciendo un espectáculo de alto nivel en distintos circuitos del país. Nacido en 2021 con el objetivo de profesionalizar el drifting competitivo, el evento combina organización técnica, reglamentación federada y participación internacional para garantizar una competición exigente y atractiva tanto para participantes como para espectadores.</p>
-                <p class="mb-6">El campeonato se estructura en diversas categorías, como Pro, Semi Pro y Street, además de modalidades orientadas al espectáculo, lo que permite la participación de pilotos con distintos niveles de experiencia. A lo largo de la temporada, los eventos se desarrollan en varios circuitos emblemáticos, donde los asistentes pueden disfrutar de entrenamientos, clasificaciones y espectaculares batallas de drift con vehículos de gran potencia y precisión técnica.</p>
-                <p class="mb-6">Drift Spain Series se consolida así como una referencia dentro del automovilismo nacional, destacando por su nivel competitivo, la calidad de su organización y la intensidad visual de cada prueba, convirtiéndose en una experiencia imprescindible para los aficionados al motor.</p>
+                <p class="mb-4">
+                    Drift Spain Series es un campeonato oficial de drifting que reúne a algunos de los mejores pilotos del panorama nacional.
+                </p>
+
+                <p class="mb-4">
+                    El evento combina competición profesional, reglamentación federada y participación internacional en distintos circuitos.
+                </p>
+
+                <p class="mb-6">
+                    Se ha consolidado como una referencia del automovilismo en España gracias a su nivel competitivo y espectacularidad.
+                </p>
 
             </section>
 
@@ -60,15 +74,29 @@
 
                 <h2 class="font-bold mb-4">Recomendados</h2>
 
-                <div class="mb-4">
-                    <p class="text-sm">15-06-2026</p>
-                    <p class="font-bold">Evento 2</p>
-                </div>
+                <!--Recomendado1-->
+                <a href="evento_futuro3.html" class="block mb-4">
+                    <div class="bg-white p-3 shadow hover:shadow-lg transition rounded">
 
-                <div>
-                    <p class="text-sm">25-06-2026</p>
-                    <p class="font-bold">Evento 3</p>
-                </div>
+                        <img src="assets/img/eventos/SecretBattle2026banner.png" class="w-full h-24 object-cover mb-2 rounded">
+
+                        <p class="text-sm text-gray-500">25/06/2026</p>
+                        <p class="font-bold">Secret Battle 2026</p>
+
+                    </div>
+                </a>
+
+                <!--Recomendado2-->
+                <a href="evento_futuro6.html" class="block">
+                    <div class="bg-white p-3 shadow hover:shadow-lg transition rounded">
+
+                        <img src="assets/img/eventos/ElGochu.png" class="w-full h-24 object-cover mb-2 rounded">
+
+                        <p class="text-sm text-gray-500">16/09/2026</p>
+                        <p class="font-bold">Gochu Skate Contest</p>
+
+                    </div>
+                </a>
 
             </aside>
 
@@ -76,6 +104,7 @@
 
         <!--Footer-->
         <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
+            <a href="rss.xml" class="text-blue-400">RSS</a>
             <p>&copy; 2026 Happiness&Co</p>
         </footer>
 
