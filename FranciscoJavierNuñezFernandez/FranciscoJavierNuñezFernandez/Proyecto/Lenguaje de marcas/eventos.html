@@ -1,241 +1,237 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happiness&Co</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Happiness&Co</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="assets/css/styles.css">
+	</head>
 
-<body class="bg-gray-100 flex flex-col min-h-screen">
+	<body class="bg-gray-100 flex flex-col min-h-screen">
 
-    <!--Header-->
-    <header class="bg-[#ba007c] text-white p-4 flex items-center gap-4">
-        <img src="assets/img/logo/logo_happiness_rosa-variante.jpg" class="h-10">
-    </header>
+		<!--Header-->
+		<header class="bg-white text-white p-4 flex items-center gap-4">
+			<img src="assets/img/logo/logo_happiness_gris.jpg" class="h-10">
+		</header>
 
-    <!--Navegacion-->
-    <nav class="bg-gray-800 text-white p-3">
-        <ul class="flex gap-4">
-            <li><a href="index.html" class="hover:underline">Inicio</a></li>
-            <li><a href="eventos.html" class="hover:underline">Eventos</a></li>
-            <li><a href="historial.html" class="hover:underline">Historial</a></li>
-            <li><a href="sobre-nosotros.html" class="hover:underline">Sobre nosotros</a></li>
-            <li><a href="fuentes.html" class="hover:underline">Fuentes</a></li>
-            <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
-        </ul>
-    </nav>
+		<!--Navegacion-->
+		<nav class="bg-gray-800 text-white p-3">
+			<ul class="flex gap-4">
+				<li><a href="index.html" class="hover:underline">Inicio</a></li>
+				<li><a href="eventos.html" class="hover:underline">Eventos</a></li>
+				<li><a href="historial.html" class="hover:underline">Historial</a></li>
+				<li><a href="sobre-nosotros.html" class="hover:underline">Sobre nosotros</a></li>
+				<li><a href="fuentes.html" class="hover:underline">Fuentes</a></li>
+				<li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+			</ul>
+		</nav>
 
-    <!--Contenido-->
-    <main class="flex">
+		<!--Contenido-->
+		<main class="flex">
 
-        <!--ContenidoPrincipal-->
-        <section class="w-3/4 p-6">
+			<!--ContenidoPrincipal-->
+			<section class="w-3/4 p-6">
 
-            <h2 class="text-2xl font-bold mb-6">Próximos eventos</h2>
-            
-            <!--SelectorCategorias-->
-            <div class="flex gap-4 mb-6 flex-wrap">
-                <a href="#motor" class="bg-[#ba007c] text-white px-4 py-2 rounded-full">Motor</a>
-                <a href="#musica" class="bg-[#009bdb] text-white px-4 py-2 rounded-full">Música</a>
-                <a href="#skate" class="bg-[#ff7b00] text-white px-4 py-2 rounded-full">Skate</a>
-            </div>
+				<h2 class="text-2xl font-bold mb-6">Próximos eventos</h2>
+				
+				<div class="flex gap-4 mb-6 flex-wrap">
+					<a href="#motor" class="bg-[#ba007c] text-white px-4 py-2 rounded-full">Motor</a>
+					<a href="#musica" class="bg-[#009bdb] text-white px-4 py-2 rounded-full">Música</a>
+					<a href="#skate" class="bg-[#ff7b00] text-white px-4 py-2 rounded-full">Skate</a>
+				</div>
 
-            <!--Motor-->
-            <h3 id="motor" class="text-xl font-bold mb-4">Motor</h3>
+				<h3 id="motor" class="text-xl font-bold mb-4">Motor</h3>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-            <!--Evento1-->
-            <a href="evento_futuro1.html">
-                <div class="bg-white rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition border">
+				<a href="evento_futuro1.html" class="group">
+					<div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
 
-                    <div class="bg-gray-100 flex items-center justify-center h-32 p-2">
-                        <img src="assets/img/eventos/DriftSpainRound2.png" class="max-h-full max-w-full">
-                    </div>
+						<div class="overflow-hidden">
+							<img src="assets/img/eventos/DriftSpainRound2.png"
+							class="w-full aspect-[16/9] object-cover group-hover:scale-110 transition duration-300">
+						</div>
 
-                    <div class="p-4">
-                        <h3 class="font-bold">Drift Spain 2026</h3>
-                        <div class="flex justify-between mt-2">
-                            <span class="bg-[#ba007c] text-white text-xs px-2 py-1 rounded">Motor</span>
-                            <span class="text-sm text-gray-500">05/06/2026</span>
-                        </div>
-                    </div>
+						<div class="p-4">
+							<h3 class="font-bold">Drift Spain 2026</h3>
+							<div class="flex justify-between mt-2">
+								<span class="bg-[#ba007c] text-white text-xs px-2 py-1 rounded">Motor</span>
+								<span class="text-sm text-gray-500">05/06/2026</span>
+							</div>
+						</div>
 
-                </div>
-            </a>
+					</div>
+				</a>
 
-            <!--Evento2-->
-            <a href="evento_futuro2.html">
-                <div class="bg-white rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition border">
+				<a href="evento_futuro2.html" class="group">
+					<div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
 
-                    <div class="bg-gray-100 flex items-center justify-center h-32 p-2">
-                        <img src="assets/img/eventos/Eurocrew.PNG" class="max-h-full max-w-full">
-                    </div>
+						<div class="overflow-hidden">
+							<img src="assets/img/eventos/Eurocrew.PNG"
+							class="w-full aspect-[16/9] object-cover group-hover:scale-110 transition duration-300">
+						</div>
 
-                    <div class="p-4">
-                        <h3 class="font-bold">Eurocrew Navarra 2026</h3>
-                        <div class="flex justify-between mt-2">
-                            <span class="bg-[#ba007c] text-white text-xs px-2 py-1 rounded">Motor</span>
-                            <span class="text-sm text-gray-500">15/06/2026</span>
-                        </div>
-                    </div>
+						<div class="p-4">
+							<h3 class="font-bold">Eurocrew Navarra 2026</h3>
+							<div class="flex justify-between mt-2">
+								<span class="bg-[#ba007c] text-white text-xs px-2 py-1 rounded">Motor</span>
+								<span class="text-sm text-gray-500">15/06/2026</span>
+							</div>
+						</div>
 
-                </div>
-            </a>
+					</div>
+				</a>
 
-            <!--Evento3-->
-            <a href="evento_futuro3.html">
-                <div class="bg-white rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition border">
+				<a href="evento_futuro3.html" class="group">
+					<div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
 
-                    <div class="bg-gray-100 flex items-center justify-center h-32 p-2">
-                        <img src="assets/img/eventos/SecretBattle2026banner.png" class="max-h-full max-w-full">
-                    </div>
+						<div class="overflow-hidden">
+							<img src="assets/img/eventos/SecretBattle2026banner.png"
+							class="w-full aspect-[16/9] object-cover group-hover:scale-110 transition duration-300">
+						</div>
 
-                    <div class="p-4">
-                        <h3 class="font-bold">Secret Battle 2026</h3>
-                        <div class="flex justify-between mt-2">
-                            <span class="bg-[#ba007c] text-white text-xs px-2 py-1 rounded">Motor</span>
-                            <span class="text-sm text-gray-500">25/06/2026</span>
-                        </div>
-                    </div>
+						<div class="p-4">
+							<h3 class="font-bold">Secret Battle 2026</h3>
+							<div class="flex justify-between mt-2">
+								<span class="bg-[#ba007c] text-white text-xs px-2 py-1 rounded">Motor</span>
+								<span class="text-sm text-gray-500">25/06/2026</span>
+							</div>
+						</div>
 
-                </div>
-            </a>
+					</div>
+				</a>
 
-            </div>
+				</div>
 
-            <hr class="my-8">
+				<hr class="my-8">
 
-            <!--Musica-->
-            <h3 id="musica" class="text-xl font-bold mb-4">Música</h3>
+				<h3 id="musica" class="text-xl font-bold mb-4">Música</h3>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-            <!--Evento4-->
-            <a href="evento_futuro4.html">
-                <div class="bg-white rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition border">
+				<a href="evento_futuro4.html" class="group">
+					<div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
 
-                    <div class="bg-gray-100 flex items-center justify-center h-32 p-2">
-                        <img src="assets/img/eventos/lanna_overlay.png" class="max-h-full max-w-full">
-                    </div>
+						<div class="overflow-hidden">
+							<img src="assets/img/eventos/lanna_overlay.png"
+							class="w-full aspect-[16/9] object-cover group-hover:scale-110 transition">
+						</div>
 
-                    <div class="p-4">
-                        <h3 class="font-bold">Lanna Festival 2026</h3>
-                        <div class="flex justify-between mt-2">
-                            <span class="bg-[#009bdb] text-white text-xs px-2 py-1 rounded">Música</span>
-                            <span class="text-sm text-gray-500">26/09/2026</span>
-                        </div>
-                    </div>
+						<div class="p-4">
+							<h3 class="font-bold">Lanna Festival 2026</h3>
+							<div class="flex justify-between mt-2">
+								<span class="bg-[#009bdb] text-white text-xs px-2 py-1 rounded">Música</span>
+								<span class="text-sm text-gray-500">26/09/2026</span>
+							</div>
+						</div>
 
-                </div>
-            </a>
+					</div>
+				</a>
 
-            <!--Evento5-->
-            <a href="evento_futuro5.html">
-                <div class="bg-white rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition border">
+				<a href="evento_futuro5.html" class="group">
+					<div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
 
-                    <div class="bg-gray-100 flex items-center justify-center h-32 p-2">
-                        <img src="assets/img/eventos/ClausuraFest.png" class="max-h-full max-w-full">
-                    </div>
+						<div class="overflow-hidden">
+							<img src="assets/img/eventos/ClausuraFest.png"
+							class="w-full aspect-[16/9] object-cover group-hover:scale-110 transition">
+						</div>
 
-                    <div class="p-4">
-                        <h3 class="font-bold">Clausura Festival 2026</h3>
-                        <div class="flex justify-between mt-2">
-                            <span class="bg-[#009bdb] text-white text-xs px-2 py-1 rounded">Música</span>
-                            <span class="text-sm text-gray-500">30/08/2026</span>
-                        </div>
-                    </div>
+						<div class="p-4">
+							<h3 class="font-bold">Clausura Festival 2026</h3>
+							<div class="flex justify-between mt-2">
+								<span class="bg-[#009bdb] text-white text-xs px-2 py-1 rounded">Música</span>
+								<span class="text-sm text-gray-500">30/08/2026</span>
+							</div>
+						</div>
 
-                </div>
-            </a>
+					</div>
+				</a>
 
-            </div>
+				</div>
 
-            <hr class="my-8">
+				<hr class="my-8">
 
-            <!--Skate-->
-            <h3 id="skate" class="text-xl font-bold mb-4">Skate</h3>
+				<h3 id="skate" class="text-xl font-bold mb-4">Skate</h3>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-            <!--Evento6-->
-            <a href="evento_futuro6.html">
-                <div class="bg-white rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition border">
+				<a href="evento_futuro6.html" class="group">
+					<div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
 
-                    <div class="bg-gray-100 flex items-center justify-center h-32 p-2">
-                        <img src="assets/img/eventos/ElGochu.png" class="max-h-full max-w-full">
-                    </div>
+						<div class="overflow-hidden">
+							<img src="assets/img/eventos/ElGochu.png"
+							class="w-full aspect-[16/9] object-cover group-hover:scale-110 transition">
+						</div>
 
-                    <div class="p-4">
-                        <h3 class="font-bold">Gochu Skate Contest 2026</h3>
-                        <div class="flex justify-between mt-2">
-                            <span class="bg-[#ff7b00] text-white text-xs px-2 py-1 rounded">Skate</span>
-                            <span class="text-sm text-gray-500">16/09/2026</span>
-                        </div>
-                    </div>
+						<div class="p-4">
+							<h3 class="font-bold">Gochu Skate Contest 2026</h3>
+							<div class="flex justify-between mt-2">
+								<span class="bg-[#ff7b00] text-white text-xs px-2 py-1 rounded">Skate</span>
+								<span class="text-sm text-gray-500">16/09/2026</span>
+							</div>
+						</div>
 
-                </div>
-            </a>
+					</div>
+				</a>
 
-            <!--Evento7-->
-            <a href="evento_futuro7.html">
-                <div class="bg-white rounded-lg shadow hover:shadow-xl hover:-translate-y-1 transition border">
+				<a href="evento_futuro7.html" class="group">
+					<div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
 
-                    <div class="bg-gray-100 flex items-center justify-center h-32 p-2">
-                        <img src="assets/img/eventos/macba.png" class="max-h-full max-w-full">
-                    </div>
+						<div class="overflow-hidden">
+							<img src="assets/img/eventos/macba.png"
+							class="w-full aspect-[16/9] object-cover group-hover:scale-110 transition">
+						</div>
 
-                    <div class="p-4">
-                        <h3 class="font-bold">Save the MACBA Contest</h3>
-                        <div class="flex justify-between mt-2">
-                            <span class="bg-[#ff7b00] text-white text-xs px-2 py-1 rounded">Skate</span>
-                            <span class="text-sm text-gray-500">25/11/2026</span>
-                        </div>
-                    </div>
+						<div class="p-4">
+							<h3 class="font-bold">Save the MACBA Contest</h3>
+							<div class="flex justify-between mt-2">
+								<span class="bg-[#ff7b00] text-white text-xs px-2 py-1 rounded">Skate</span>
+								<span class="text-sm text-gray-500">25/11/2026</span>
+							</div>
+						</div>
 
-                </div>
-            </a>
+					</div>
+				</a>
 
-            </div>
+				</div>
 
-        </section>
+			</section>
 
-        <!--Lateral-->
-        <aside class="w-1/4 p-6 bg-gray-200">
+			<!--Lateral-->
+			<aside class="w-1/4 p-6 bg-gray-200">
 
-            <h2 class="font-bold mb-4">Recomendados</h2>
+				<h2 class="font-bold mb-4">Recomendados</h2>
 
-            <a href="evento_futuro3.html" class="block mb-4">
-                <div class="bg-white shadow rounded overflow-hidden">
-                    <img src="assets/img/eventos/SecretBattle2026banner.png" class="w-full h-24 object-cover">
-                    <div class="p-3">
-                        <p class="text-sm text-gray-500">25/06/2026</p>
-                        <p class="font-bold">Secret Battle 2026</p>
-                    </div>
-                </div>
-            </a>
+				<a href="evento_futuro3.html" class="block mb-4">
+					<div class="bg-white shadow rounded overflow-hidden">
+						<img src="assets/img/eventos/SecretBattle2026banner.png" class="w-full h-24 object-cover">
+						<div class="p-3">
+							<p class="text-sm text-gray-500">25/06/2026</p>
+							<p class="font-bold">Secret Battle 2026</p>
+						</div>
+					</div>
+				</a>
 
-            <a href="evento_futuro6.html" class="block">
-                <div class="bg-white shadow rounded overflow-hidden">
-                    <img src="assets/img/eventos/ElGochu.png" class="w-full h-24 object-cover">
-                    <div class="p-3">
-                        <p class="text-sm text-gray-500">16/09/2026</p>
-                        <p class="font-bold">Gochu Skate Contest</p>
-                    </div>
-                </div>
-            </a>
+				<a href="evento_futuro6.html" class="block">
+					<div class="bg-white shadow rounded overflow-hidden">
+						<img src="assets/img/eventos/ElGochu.png" class="w-full h-24 object-cover">
+						<div class="p-3">
+							<p class="text-sm text-gray-500">16/09/2026</p>
+							<p class="font-bold">Gochu Skate Contest</p>
+						</div>
+					</div>
+				</a>
 
-        </aside>
+			</aside>
 
-    </main>
+		</main>
 
-    <!--Footer-->
-    <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
-        <a href="rss.xml" class="text-blue-400">RSS</a>
-        <p>&copy; 2026 Happiness&Co</p>
-    </footer>
+		<!--Footer-->
+		<footer class="bg-gray-800 text-white p-4 text-center mt-auto">
+			<a href="rss.xml" class="text-blue-400">RSS</a>
+			<p>&copy; 2026 Happiness&Co</p>
+		</footer>
 
-</body>
+	</body>
 </html>

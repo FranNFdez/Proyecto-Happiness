@@ -1,4 +1,4 @@
-package Proyecto;
+package proyectohappiness;
 
 public class Favorito {
 
@@ -16,14 +16,6 @@ public class Favorito {
 
     public int getIdEvento() {
         return idEvento;
-    }
-
-    public void setCorreoUsuario(String correoUsuario) {
-        this.correoUsuario = correoUsuario;
-    }
-
-    public void setIdEvento(int idEvento) {
-        this.idEvento = idEvento;
     }
 
     @Override
